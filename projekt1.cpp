@@ -2,6 +2,13 @@
 
 using namespace std;
 
+int silnia ( int a ){
+	if ( a > 1 )
+		return a*silnia(a-1);
+	else
+		return 1;
+}
+
 int main() {
     int a, b;
     cout << "Podaj liczbe calkowita ";
